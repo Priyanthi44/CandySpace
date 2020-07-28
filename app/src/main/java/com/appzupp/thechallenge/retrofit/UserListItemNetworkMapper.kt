@@ -1,8 +1,8 @@
 package com.appzupp.thechallenge.retrofit
 
-import com.appzupp.thechallenge.model.User
 import com.appzupp.thechallenge.model.UserListItem
 import com.appzupp.thechallenge.util.NetworkEntityMapper
+import io.reactivex.Maybe
 import javax.inject.Inject
 
 class UserListItemNetworkMapper @Inject constructor() : NetworkEntityMapper<UserListItemNetworkEntity, UserListItem> {
@@ -23,7 +23,7 @@ class UserListItemNetworkMapper @Inject constructor() : NetworkEntityMapper<User
         )
     }
 
-    fun mapFromEntityList(entities:List<UserListItemNetworkEntity>):List<UserListItem>{
+    fun mapFromEntityList(entities: List<UserListItemNetworkEntity>):List<UserListItem>{
         return entities.map{mapFromEntity(it)}
     }
 }
