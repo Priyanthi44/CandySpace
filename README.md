@@ -1,4 +1,4 @@
-# CandySpace Challenge
+
 ## Business Logic
 The API service handles obtaining max 20 results and sorting in alphabetical order. The data is displayed without caching since the data do not require to be reaccessed or stored. The obtained data is maintained throughout the application using singleton dependency injection and view state is maintained using view model indepe
 ### Setting the Interfaces
